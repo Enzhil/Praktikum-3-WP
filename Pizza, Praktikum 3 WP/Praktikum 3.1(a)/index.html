@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registration</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>
+        <h2>Ferrari Tifosi | Pizza D'Italia</h2>
+      </legend>
+
+      <!-- Deskripsi -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+        assumenda quis eius cumque, ratione, quisquam et incidunt fugit quidem
+        odit debitis unde adipisci enim? Praesentium recusandae accusantium
+        repudiandae dolorum commodi.
+      </p>
+      <br />
+
+      <!-- Formulir Start -->
+      <form action="submit.html" method="post">
+        <p>Your Information</p>
+
+        <label for="name">Name :</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Michael Schumacher"
+          required
+        />
+        <br />
+        <br />
+        <label for="address">Address :</label>
+        <input type="text" id="address" required />
+        <br />
+        <br />
+        <label for="HP">Telephone Number :</label>
+        <input type="number" id="HP" placeholder="+62 1998 911" required />
+        <br />
+        <br />
+        <label for="mail">Email :</label>
+        <input type="email" id="mail" />
+        <br />
+        <br />
+        <label for="order">Delivery Instruction :</label>
+        <textarea id="order" cols="30" rows="10"></textarea>
+        <br />
+        <br />
+        <!-- Formulir End -->
+
+        <!-- Design Pizza Start -->
+        <h3>Deisgn Your Dream Pizaa</h3>
+
+        <!-- Radio buttun -->
+        <p>Pizza Specs</p>
+        <p>Crust (Choose One) :</p>
+
+        <input type="radio" id="Cw" name="crust" />
+        <label for="cw">Classic White</label><br />
+
+        <input type="radio" id="mg" name="crust" />
+        <label for="mg">Multigrain</label>
+        <br />
+
+        <input type="radio" id="cs" name="crust" />
+        <label for="cs">Cheese</label>
+        <br />
+
+        <input type="radio" id="gf" name="crust" />
+        <label for="gf">Gluten-free</label>
+        <br />
+
+        <!-- Check Box -->
+        <p>Toppings :</p>
+        <input type="checkbox" id="rs" name="toppings1" />
+        <label for="rs"> Red Sauce</label><br />
+
+        <input type="checkbox" id="ws" name="toppings2" />
+        <label for="ws"> White Sauce</label>
+        <br />
+
+        <input type="checkbox" id="ma" name="toppings3" />
+        <label for="ma"> Mozzarella</label>
+        <br />
+
+        <input type="checkbox" id="pp" name="toppings4" />
+        <label for="pp"> Pepperoni</label>
+        <br />
+
+        <input type="checkbox" id="mr" name="toppings4" />
+        <label for="mr"> Mushrooms</label>
+        <br />
+
+        <p>Number of Pizza</p>
+        <p>How many pizzas :</p>
+        <input type="number" />
+        <br />
+        <!-- Design End -->
+
+        <input type="submit" value="Order Pizza" />
+        <input type="reset" />
+      </form>
+    </fieldset>
+  </body>
+</html>

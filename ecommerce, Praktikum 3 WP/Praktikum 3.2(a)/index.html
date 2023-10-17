@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wejae Store</title>
+    <link rel="shortcut icon" href="Icon/Profile WJ.png" type="image/x-icon" />
+
+    <!-- Internal CSS -->
+    <style>
+      .judul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        background-color: #cde41e;
+        border-bottom: 1px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+
+  <body style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+    <!-- Navbar -->
+    <nav>
+      <div class="judul">
+        <h1 style="color: white">
+          <img
+            src="icon/Profile WJ.png"
+            alt="WJ_LOGO"
+            height="50px"
+            align="center"
+          />WEJAE STORE
+        </h1>
+        <a href="index.html" style="color: white">Home</a>
+        <a href="gl.html" style="color: white">Generate Link</a>
+        <a href="ts.html" style="color: white">Transaction History </a>
+        <a href="policy.html" style="color: white">Policy</a>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Navbar End -->
+
+    <!-- Form -->
+
+    <!-- maaf ka, Saya kebingungan bagaimana caranya form ini berada di sebelah kanan gambar, saya coba menggunakan beberapa cara agar minimal form ini center tetapi tidak berhasil  -->
+
+    <form action="gl.html">
+      <h2>Pilih Gambar :</h2>
+      <img
+        width="300px"
+        src="icon/Scuderia Ferrari F1 Men's 2022 Team Polo Shirt - Red - XS.jpg"
+        alt="Polo Scuderia Ferrari"
+      />
+      <br />
+      <h3>Unggah gambar melalui komputer anda</h3>
+      <label for="img">Upload Image:</label>
+      <input type="file" id="img" /><br />
+      <h3>Atau unggah gambar melalui URL</h3>
+      <label for="url">Salin URL :</label>
+      <input type="url" size="35" id="url" placeholder="http://...." />
+      <br />
+      <br />
+      <label for="ttl">Title :</label>
+      <input type="text" id="ttl" />
+      <br />
+      <label for="dsc">Description :</label><br />
+      <textarea id="dsc" cols="30" rows="10"></textarea>
+      <br />
+      <label for="acc">Account Number :</label>
+      <input type="text" id="acc" />
+      <br />
+      <label for="bank">Bank :</label>
+      <select id="bank"></select>
+      <option value="BCA"></option>
+      <option value="Mandiri"></option>
+      <br />
+      <label for="acc2">Account Holder :</label>
+      <input type="text" id="acc2" />
+      <br />
+      <label for="ts">Transaction :</label>
+      <input type="number" id="ts" placeholder="3" /><br />
+      <em
+        >* if the transaction is for 3 person, choose 3 from the drop-down
+        list</em
+      ><br />
+      <br />
+      <label for="tlp"> Send to mobile phone :</label>
+      <input type="text" placeholder="0812-1998-911" />
+      <br />
+      <label for="mail"> Send to mail :</label>
+      <input type="text" placeholder="kitabisa5@gmail.com" />
+      <br />
+      <br />
+      <!-- Form End -->
+
+      <input type="submit" value="Generate Nabr Link" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
